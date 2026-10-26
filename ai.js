@@ -1,6 +1,6 @@
 // Worker жарияланғаннан кейін тек осы жолды бір рет өзгертіңіз.
 // Мысалы: const AI_API_URL = "https://fearmap-literary-ai-2026.username.workers.dev";
-const AI_API_URL = "PASTE_NEW_CLOUDFLARE_WORKER_URL_HERE";
+const AI_API_URL = "https://fearmap-literary-ai-2026.vp5vy7g7db.workers.dev";
 
 export const MAX_INPUT_LENGTH = 2400;
 
