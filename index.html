@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="FearMap — многостраничное приложение для анализа страхов литературных героев.">
+  <meta name="theme-color" content="#181816">
+  <title>FearMap — литературная карта страхов</title>
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/styles.css?v=3.0.1">
+</head>
+<body data-page="home">
+  <a class="skip-link" href="#main">К содержанию</a>
+  <header id="site-header"></header>
+  <main id="main">
+    <section class="hero home-hero" id="top">
+      <div class="hero-orbit hero-orbit--one" aria-hidden="true"></div><div class="hero-orbit hero-orbit--two" aria-hidden="true"></div>
+      <div class="hero-copy">
+        <p class="hero-kicker"><span></span> Многостраничное исследование литературы</p>
+        <h1>Один герой.<br><em>Множество связей.</em></h1>
+        <p class="hero-lead">Создавайте собственную библиотеку произведений, открывайте карту страхов, сравнивайте персонажей и проверяйте гипотезы с генеративным AI.</p>
+        <div class="hero-actions"><a class="primary-button" href="library.html">Открыть библиотеку <span aria-hidden="true">↗</span></a><a class="ghost-button" href="add-work.html"><span class="play-icon" aria-hidden="true">＋</span> Добавить произведение</a></div>
+      </div>
+      <div class="hero-visual" aria-label="Карта связей между героями и страхами">
+        <div class="map-grid" aria-hidden="true"></div><div class="visual-label">FearMap Navigator <span>8 страниц</span></div>
+        <div class="fear-node fear-node--center"><span>FEAR</span><strong>MAP</strong><small>единая библиотека</small></div>
+        <div class="fear-node fear-node--loss"><b>Библиотека</b><span>любые произведения</span></div>
+        <div class="fear-node fear-node--change"><b>Карта</b><span>страхи и связи</span></div>
+        <div class="fear-node fear-node--judgment"><b>Сравнение</b><span>разные решения</span></div>
+        <div class="fear-node fear-node--death"><b>AI-анализ</b><span>новые ответы</span></div>
+        <svg class="connection-lines" viewBox="0 0 720 620" aria-hidden="true"><path d="M360 308 C280 230 230 178 144 126"/><path d="M360 308 C455 242 525 196 590 135"/><path d="M360 308 C470 350 542 398 612 455"/><path d="M360 308 C270 370 205 430 136 508"/></svg>
+      </div>
+      <div class="hero-metrics"><div><strong id="home-work-count">5</strong><span>героев в библиотеке</span></div><div><strong>08</strong><span>отдельных страниц</span></div><div><strong>04</strong><span>следа страха</span></div><div><strong>AI</strong><span>Cloudflare Workers</span></div></div>
+    </section>
+    <section class="section route-section">
+      <div class="section-heading reveal"><div><p class="eyebrow">Маршрут исследования</p><h2>Каждая задача —<br>на своей странице</h2></div><p>Переходите между разделами как в полноценном приложении. Добавленные вами произведения доступны на всех страницах этого сайта.</p></div>
+      <div class="route-grid reveal">
+        <a class="route-card route-card--wide" href="library.html"><span>01</span><h3>Библиотека</h3><p>Все готовые и добавленные вами произведения в одном каталоге.</p><b>Открыть ↗</b></a>
+        <a class="route-card" href="map.html"><span>02</span><h3>Карта связей</h3><p>Группировка героев по видам страха.</p><b>Исследовать ↗</b></a>
+        <a class="route-card" href="compare.html"><span>03</span><h3>Сравнение</h3><p>Общие страхи и разные решения.</p><b>Сравнить ↗</b></a>
+        <a class="route-card" href="add-work.html"><span>04</span><h3>Новая книга</h3><p>Ручная карточка или AI-черновик.</p><b>Добавить ↗</b></a>
+        <a class="route-card route-card--dark" href="ai.html"><span>05</span><h3>FearMap AI</h3><p>Разбор любого героя в реальном времени.</p><b>Задать вопрос ↗</b></a>
+        <a class="route-card" href="detective.html"><span>06</span><h3>Детектив</h3><p>Пять заданий на внимательное чтение.</p><b>Начать ↗</b></a>
+        <a class="route-card" href="progress.html"><span>07</span><h3>Прогресс</h3><p>Баллы, достижения и изученные герои.</p><b>Посмотреть ↗</b></a>
+      </div>
+    </section>
+    <section class="section home-library-section">
+      <div class="section-heading reveal"><div><p class="eyebrow">Моя библиотека</p><h2>Начните с примеров.<br>Продолжите своими.</h2></div><p>Первые карточки показывают метод. Любой новый герой автоматически подключается ко всем инструментам FearMap.</p></div>
+      <div class="hero-grid hero-grid--preview" id="home-hero-preview"></div><div class="center-action"><a class="primary-button" href="library.html">Показать всю библиотеку</a></div>
+    </section>
+  </main>
+  <footer id="site-footer"></footer><div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script type="module" src="assets/js/app.js?v=3.0.1"></script>
+</body>
+</html>
