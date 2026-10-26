@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Добавить любое произведение в FearMap."><meta name="theme-color" content="#181816"><title>Добавить произведение — FearMap</title><link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="assets/css/styles.css?v=3.0.1"></head>
+<body data-page="add"><a class="skip-link" href="#main">К содержанию</a><header id="site-header"></header>
+<main id="main"><section class="page-masthead page-masthead--violet"><p class="eyebrow">04 · Новая карточка</p><h1>Любое произведение.<br><em>Любой герой.</em></h1><p>Заполните анализ самостоятельно или попросите AI создать проверяемый черновик. После сохранения герой появится на всех страницах.</p></section>
+<section class="section page-content-section form-page-section">
+  <div class="form-intro"><span>01</span><div><h2>Данные произведения</h2><p>Поля со звёздочкой обязательны. AI не публикует карточку автоматически — финальное решение всегда остаётся за вами.</p></div></div>
+  <form class="work-form work-form--page" id="work-form">
+    <div class="work-form__grid">
+      <label>Произведение *<input id="work-title" name="work" required maxlength="120" placeholder="Например: Гамлет"></label>
+      <label>Автор<input id="work-author" name="author" maxlength="120" placeholder="Уильям Шекспир"></label>
+      <label>Герой *<input id="work-hero" name="hero" required maxlength="100" placeholder="Гамлет"></label>
+      <label>Эпоха<input id="work-era" name="era" maxlength="60" list="era-options" placeholder="XVII век"></label>
+      <datalist id="era-options"><option value="Античность"><option value="Средневековье"><option value="XIX век"><option value="XX век"><option value="XXI век"></datalist>
+      <label class="work-form__wide">Жанр<input id="work-genre" name="genre" maxlength="100" placeholder="Трагедия, роман, рассказ…"></label>
+    </div>
+    <fieldset class="fear-picker"><legend>Какие страхи заметны у героя? *</legend><label><input type="checkbox" name="work-fear" value="loss"><span>Потеря</span></label><label><input type="checkbox" name="work-fear" value="death"><span>Смерть</span></label><label><input type="checkbox" name="work-fear" value="change"><span>Перемены</span></label><label><input type="checkbox" name="work-fear" value="judgment"><span>Осуждение</span></label><label><input type="checkbox" name="work-fear" value="failure"><span>Неудача</span></label><label><input type="checkbox" name="work-fear" value="loneliness"><span>Одиночество</span></label></fieldset>
+    <div class="work-form__steps">
+      <label><span>01 · Событие *</span><textarea id="work-event" required maxlength="500" rows="4" placeholder="Что произошло с героем?"></textarea></label>
+      <label><span>02 · Возможный страх *</span><textarea id="work-fear-text" required maxlength="500" rows="4" placeholder="Чего он мог бояться?"></textarea></label>
+      <label><span>03 · Поступок *</span><textarea id="work-action" required maxlength="500" rows="4" placeholder="Что герой сделал?"></textarea></label>
+      <label><span>04 · Последствие *</span><textarea id="work-consequence" required maxlength="500" rows="4" placeholder="К чему это привело?"></textarea></label>
+    </div>
+    <label class="work-form__wide">Доказательство или деталь текста *<textarea id="work-evidence" required maxlength="700" rows="4" placeholder="Опишите эпизод или вставьте короткую проверенную цитату"></textarea></label>
+    <label class="work-form__wide">Главный вывод *<input id="work-insight" required maxlength="240" placeholder="Как страх влияет на выбор героя?"></label>
+    <div class="ai-draft-box"><div><strong>Заполнить черновик через AI</strong><p>Для неизвестного произведения добавьте короткий фрагмент. Ответ обязательно проверьте по книге.</p></div><textarea id="work-excerpt" maxlength="5000" rows="5" placeholder="Необязательно: вставьте фрагмент произведения для более точного анализа"></textarea><button class="secondary-button" id="analyze-work-ai" type="button">Создать AI-черновик <span>✦</span></button><p class="form-status" id="work-ai-status" aria-live="polite"></p></div>
+    <div class="work-form__actions"><button class="reset-button" id="work-form-reset" type="button">Очистить форму</button><button class="primary-button" type="submit">Добавить в библиотеку <span>↗</span></button></div>
+  </form>
+</section></main>
+<footer id="site-footer"></footer><div class="toast" id="toast" role="status" aria-live="polite"></div><script type="module" src="assets/js/app.js?v=3.0.1"></script></body></html>

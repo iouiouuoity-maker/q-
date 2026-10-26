@@ -1,0 +1,12 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "fearmap-literary-ai-2026",
+  "main": "worker.js",
+  "compatibility_date": "2026-10-24",
+  "ai": {
+    "binding": "AI"
+  },
+  "observability": {
+    "enabled": true
+  }
+}
